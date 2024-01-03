@@ -16,7 +16,7 @@ app.get('/', async (req: Request, res: Response) => {
     try {
         
         const completion = await openai.chat.completions.create({
-            messages: [{ role: "system", content: "How Are you2?" }],
+            messages: [{ role: "system", content: "say something about you ?" }],
             model: "gpt-3.5-turbo",
         })
 
